@@ -82,15 +82,27 @@ header {
 }
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #e0e6e9; /* خلفية فاتحة للوحة التمرير */
-    padding-top: 80px; /* لتعويض الهيدر الثابت */
+    background: url('image/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--light-text-color);
+    padding-top: 80px;
     overflow: hidden;
 }
 
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 #root {
     width: 100%;
     height: 100%;
